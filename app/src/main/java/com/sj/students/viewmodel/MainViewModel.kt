@@ -8,6 +8,7 @@ import com.sj.students.net.StudentsService
 import kotlinx.coroutines.Dispatchers
 
 class MainViewModel : ViewModel() {
+
     private val service = StudentsService()
     private val studentsList = liveData(Dispatchers.IO) {
         val receivedList = service.getStudentsData()
