@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Students</string>
+    <string name="is_mature">Is Mature:</string>
+    <string name="is_student">Is student:</string>
+    <string name="year">Year:</string>
+    <string name="name">Name:</string>
 </resources>

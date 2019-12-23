@@ -1,10 +1,12 @@
 package com.sj.students.net
 
+import android.util.Log
 import com.sj.students.model.MoshiAdapter
 import com.sj.students.model.StudentsModel
 import com.squareup.moshi.Moshi
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import java.net.UnknownHostException
 
 interface StudentsServiceInterface {
     suspend fun getStudentsData(): List<StudentsModel>
@@ -26,6 +28,12 @@ class StudentsService (
             .build()
         val studentsApi = retrofit.create(StudentsApi::class.java)
 
-        return studentsApi.getStudentsList(jsonId)
+        try {
+            return studentsApi.getStudentsList(jsonId)
+        } catch (ex: UnknownHostException) {
+            Log.e("StudentsError", ex.localizedMessage!!)
+        }
+
+        return emptyList()
     }
 }
