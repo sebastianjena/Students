@@ -9,8 +9,8 @@ interface StudentsServiceInterface {
 }
 
 class StudentsService (
-    private val url: String = "https://students.free.beeceptor.com/",
-    private val jsonId: String = "123"
+    private val url: String = "http://www.mocky.io/",
+    private val jsonId: String = "5db2e026350000a91af5527c"
 ) : StudentsServiceInterface {
 
     override suspend fun getStudentsData(): List<StudentsModel> {
