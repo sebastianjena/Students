@@ -17,7 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-
         android:id="@+id/studentYear"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -28,14 +27,23 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-
         android:id="@+id/studentStatus"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="22sp"
-        android:textStyle="bold" tools:text="status"
+        android:textStyle="bold" tools:text="true"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/studentYear"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/studentMaturity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="bold" tools:text="true"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/studentStatus"
         app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
