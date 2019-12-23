@@ -36,6 +36,7 @@ class RecyclerAdapter(private val students: List<StudentsModel>) : RecyclerView.
             view.studentName.text = student.name
             view.studentYear.text = student.yearOfBirth.toString()
             view.studentStatus.text = student.student.toString()
+            view.studentMaturity.text = student.maturity.toString()
 
         }
     }

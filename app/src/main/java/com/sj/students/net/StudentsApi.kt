@@ -6,6 +6,6 @@ import retrofit2.http.Path
 
 interface StudentsApi {
 
-    @GET("{id}")
+    @GET("v2/{id}")
     suspend fun getStudentsList(@Path(value = "id") jsonId: String): List<StudentsModel>
 }
