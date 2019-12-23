@@ -43,8 +43,9 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
 
     // Kotlin Coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1"
+    def coroutines_version= "1.3.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 
     // Lifecycle, LiveData
     def lifecycle_version= "2.2.0-rc03"
